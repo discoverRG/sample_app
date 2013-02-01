@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
+gem 'bootstrap-sass', '2.1'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
@@ -22,20 +23,6 @@ gem 'jquery-rails', '2.0.2'
 
 group :test do
   gem 'capybara', '1.1.2'
-end
-
-#Test gems on Macintosh OS X
-group :test do
-	gem 'capybara', '1.1.2'
-	gem 'rb-fsevent', '0.9.1', :require => false
-	gem 'growl', '1.0.3'
-end
-
-#Test gems on Linux
-group :test do
-	gem 'capybara', '1.1.2'
-	gem 'rb-inotify', '0.8.8'
-	gem 'libnotify', '0.5.9'
 end
 
 #Test gems on Windows
